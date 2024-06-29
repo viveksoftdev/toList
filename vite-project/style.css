@@ -1,0 +1,24 @@
+.grid{
+  display: grid;
+}
+.grid__columns-three{
+  grid-template-columns:repeat(3,1fr);
+  grid-area: .2rem;
+  
+}
+.container{
+  display: inline-block;
+  text-align: center;
+  width: clamp(5rem,fit-content,fit-content);
+  padding: 3em;
+  border:none;
+  word-break: break-word;
+  background-image:linear-gradient(60deg, #36BA98,#91DDCF);
+  transition:opacity 0.3s;
+  opacity: 0.7;
+  
+
+}
+.container:hover{
+  opacity: 1;
+}
